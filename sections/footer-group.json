@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_aJUDLq": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Logo_for_website_inverted.png",
+            "image_width": 240,
+            "alignment": ""
+          }
+        },
+        "text_rtJphF": {
+          "type": "text",
+          "settings": {
+            "heading": "Christiana Manila",
+            "subtext": "<p>11th floor, VGP Center, 6772 Ayala Avenue, Barangay San Lorenzo, Makati City</p><p>Open Mon-Fri from 1-6pm</p>"
+          }
+        },
+        "link_list_WLWTVz": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "quick-links"
+          }
+        }
+      },
+      "block_order": [
+        "image_aJUDLq",
+        "text_rtJphF",
+        "link_list_WLWTVz"
+      ],
+      "custom_css": [
+        "h2 {font-family: Orpheus Pro, Serif; font-size: 24px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe and get a discount",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

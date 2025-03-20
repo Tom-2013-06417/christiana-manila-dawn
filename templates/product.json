@@ -1,0 +1,153 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "collapsible_tab_VCAUeL": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Chart",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.sizechart | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_DNdCX9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "none",
+            "content": "<p>Wash separately.<br/>Hand wash or machine wash using delicate setting.<br/>Avoid using detergent as this can affect the color of the product.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_zPBtqE": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Exchange and Return",
+            "icon": "none",
+            "content": "<p>We DO NOT accept refunds. For returns and exchanges, kindly send an email to <a href=\"mailto:%20inquiry@christianamanila.com\">inquiry@christianamanila.com.</a> A piece of the same size and design will be sent unless the customer requests for another item available on hand. If the item is not available, store credit valid for 3 months will be given instead. ONE TIME EXCHANGE ONLY.<br/><br/>Read more about the process <a href=\"/pages/exchange-return-policy\" title=\"Exchange / Return Policy\">here.</a></p>",
+            "page": ""
+          }
+        },
+        "swishlist_simple_wishlist_wishlist_product_button_QUTeyb": {
+          "type": "shopify://apps/swishlist-simple-wishlist/blocks/wishlist_product_button/bfcb80f2-f00d-42ae-909a-9f00c726327b",
+          "settings": {
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share",
+        "collapsible_tab_VCAUeL",
+        "collapsible_tab_DNdCX9",
+        "collapsible_tab_zPBtqE",
+        "swishlist_simple_wishlist_wishlist_product_button_QUTeyb"
+      ],
+      "custom_css": [
+        "product-form {width: 100%; max-width: none; margin: 0; padding: 0rem;}",
+        "h1 {color: #292929;}",
+        ".price__regular {color: #292929;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-5",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}

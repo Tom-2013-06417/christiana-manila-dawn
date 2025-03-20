@@ -1,0 +1,517 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_i7tbbt": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_UErHiT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Le_chic_Web_Cover_1.jpg",
+            "heading": "LE CHIC COLLECTION",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/le-chic",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_9BFcgR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Lunar_new_year_2025.jpg",
+            "heading": "LUNAR NEW YEAR",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Now",
+            "link": "",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UErHiT",
+        "slide_9BFcgR"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.banner, slideshow-component {display: none; }}",
+        "h2 {font-family: Orpheus Pro, serif;}",
+        ".slideshow__media {clip-path: inset(0);}",
+        ".slideshow__media > img:not(.zoom):not(.deferred-media__poster-button),.slideshow__media > svg:not(.zoom):not(.deferred-media__poster-button) {position: fixed; height: 100vh;}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Christiana Features"
+      }
+    },
+    "slideshow_qpdzjB": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yzkAYx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Le_chic_Mobile_Cover.jpg",
+            "heading": "LE CHIC COLLECTION",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/le-chic",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_X8D6ka": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Lunar_new_year_Mobile_Cover.jpg",
+            "heading": "LUNAR NEW YEAR",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Now",
+            "link": "",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yzkAYx",
+        "slide_X8D6ka"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.banner, slideshow-component {display: none; }}",
+        "h2 {font-family: Orpheus Pro, serif;}",
+        ".slideshow__media {clip-path: inset(0); position: absolute !important; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover; min-height: calc(100vw * 1.5);}",
+        ".slideshow__media > img:not(.zoom):not(.deferred-media__poster-button),.slideshow__media > svg:not(.zoom):not(.deferred-media__poster-button) {position: fixed; height: 100vh;}",
+        ".button--secondary {background-color: transparent !important;}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Christiana Features"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-size: 2rem; text-align: center;}"
+      ],
+      "settings": {
+        "title": "NEW COLLECTION",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 20,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 64,
+        "padding_bottom": 40
+      }
+    },
+    "collection_list_mUGXm6": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Pa3tpC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tops-test"
+          }
+        },
+        "featured_collection_TV6Gf3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dress-test"
+          }
+        },
+        "featured_collection_GBjAwi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sets-test"
+          }
+        },
+        "featured_collection_ba7NPy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rompers-test"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Pa3tpC",
+        "featured_collection_TV6Gf3",
+        "featured_collection_GBjAwi",
+        "featured_collection_ba7NPy"
+      ],
+      "custom_css": [
+        ".collection-list__item {margin-bottom: 32px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_W8TWpt": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-size: 2rem; text-align: center;}"
+      ],
+      "settings": {
+        "title": "BESTSELLERS",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 20,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 64,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_B4CJ3d": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JQr7yP": {
+          "type": "heading",
+          "settings": {
+            "heading": "SALE",
+            "heading_size": "h2"
+          }
+        },
+        "text_whwVYX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Qgh8NX": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Collection",
+            "button_link": "shopify://collections/11-11-surprise-sale",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_JQr7yP",
+        "text_whwVYX",
+        "button_Qgh8NX"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/Resort_2024_Mobile_Cover.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_7diV6x": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_itTyDB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Christiana is always in pursuit of making everyday elegance effortless.",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_NgHpBe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "About Us",
+            "button_link_1": "shopify://pages/about-us",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_itTyDB",
+        "buttons_NgHpBe"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.banner {display: none; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Summer_Web_Cover.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "image_banner_FL6Dkr": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Dk7RMn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Christiana is always in pursuit of making everyday elegance effortless.",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_yBjQFM": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "About Us",
+            "button_link_1": "shopify://pages/about-us",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Dk7RMn",
+        "buttons_yBjQFM"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.banner {display: none; }}",
+        ".banner {min-height: calc(100vw * 1.5);}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Summer_Mobile_Cover.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection_g8Y3nh": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 20px; text-align: center;}"
+      ],
+      "settings": {
+        "title": "NEW ITEMS",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "non-sale-items",
+        "products_to_show": 20,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 64,
+        "padding_bottom": 48
+      }
+    },
+    "multicolumn_xtVqNf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_mUnGCk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Christiana_influencer_3.jpg",
+            "title": "Influencer photo feature from IG",
+            "text": "",
+            "link_label": "SHOP SHIRT",
+            "link": ""
+          }
+        },
+        "column_jfaEfr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Christiana_influencer_3.jpg",
+            "title": "Influencer photo feature from IG",
+            "text": "",
+            "link_label": "SHOP SHIRT",
+            "link": ""
+          }
+        },
+        "column_rDKrPr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Christiana_influencer_3.jpg",
+            "title": "Influencer photo feature from IG",
+            "text": "",
+            "link_label": "SHOP SHIRT",
+            "link": ""
+          }
+        },
+        "column_xjjc6B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Christiana_influencer_3.jpg",
+            "title": "Influencer photo feature from IG",
+            "text": "",
+            "link_label": "SHOP SHIRT",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_mUnGCk",
+        "column_jfaEfr",
+        "column_rDKrPr",
+        "column_xjjc6B"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem; text-align: center; width: 100%;}"
+      ],
+      "settings": {
+        "title": "IN MY CHRISTIANA'S",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "video_eQeF3E": {
+      "type": "video",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 20px; text-align: center;}"
+      ],
+      "settings": {
+        "heading": "PRODUCT NAME HERE",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/IMG_0393.mov",
+        "video_url": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_i7tbbt",
+    "slideshow_qpdzjB",
+    "featured_collection",
+    "collection_list_mUGXm6",
+    "featured_collection_W8TWpt",
+    "image_with_text_B4CJ3d",
+    "image_banner_7diV6x",
+    "image_banner_FL6Dkr",
+    "featured_collection_g8Y3nh",
+    "multicolumn_xtVqNf",
+    "video_eQeF3E"
+  ]
+}

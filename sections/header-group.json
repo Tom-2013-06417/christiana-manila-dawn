@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Sign up for the newsletter and receive a discount on your first online order!",
+            "link": ""
+          }
+        },
+        "announcement_wVXijE": {
+          "type": "announcement",
+          "settings": {
+            "text": "Visit our showroom at 11th flr., VGP Center, Ayala Ave, Makati! Open from Mon-Fri, 1-6pm.",
+            "link": ""
+          }
+        },
+        "announcement_Pd9eCr": {
+          "type": "announcement",
+          "settings": {
+            "text": "For inquiries, contact Suzanne +63 936 915 8154.",
+            "link": ""
+          }
+        },
+        "announcement_GxUEam": {
+          "type": "announcement",
+          "settings": {
+            "text": "A new look is coming to our website - stay tuned!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "announcement_wVXijE",
+        "announcement_Pd9eCr",
+        "announcement_GxUEam"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 6,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        "account-icon {color: #94674b;}",
+        "#cart-icon-bubble {color: #94674b;}",
+        ".cart-count-bubble {background-color: #94674b;}",
+        ".icon.icon-search {color: #94674b;}"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
