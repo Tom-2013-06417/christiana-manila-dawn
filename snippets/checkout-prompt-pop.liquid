@@ -1,0 +1,27 @@
+{{ 'component-checkout-prompt-pop.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'checkout-prompt-pop.js' | asset_url }}" defer="defer"></script>
+
+<checkout-prompt-pop>
+  <div id="checkout-prompt-pop" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3>
+        {{ settings.summarized_exchange_and_return_policy_title }}
+      </h3>
+      <p>
+        {{ settings.summarized_exchange_and_return_policy }}
+      </p>
+      <div class="modal-content-footer">
+        <button
+          class="cart__checkout-button button"
+          form="cart"
+          id="checkout-prompt-proceed"
+          name="checkout"
+          type="submit"
+        >
+          {{ settings.terms_and_conditions_copy }}
+        </button>
+      </div>
+    </div>
+  </div>
+</checkout-prompt-pop>

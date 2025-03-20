@@ -34,6 +34,28 @@
     ]
   },
   {
+    "name": "Exchange and Return Popup Settings",
+    "settings": [
+      {
+        "type": "text",
+        "id": "summarized_exchange_and_return_policy_title",
+        "label": "Exchange and Return Policy Title",
+        "default": "Exchange and Return Policy"
+      },
+      {
+        "type": "textarea",
+        "id": "summarized_exchange_and_return_policy",
+        "label": "Summarized Exchange and Return Policy"
+      },
+      {
+        "type": "text",
+        "id": "terms_and_conditions_copy",
+        "label": "Terms and Conditions Button",
+        "default": "I have read the terms"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
