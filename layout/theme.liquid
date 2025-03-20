@@ -375,6 +375,10 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    {% if template == 'product' %}
+      {% render 'meta-tracking-pixel' %}
+    {% endif %}
+
     <style>
       .announcement-bar-slider button.slider-button.slider-button--next,
       .announcement-bar-slider button.slider-button.slider-button--prev {

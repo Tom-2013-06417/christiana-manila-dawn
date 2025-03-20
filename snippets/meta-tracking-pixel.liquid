@@ -1,0 +1,132 @@
+<script>
+  function fireViewProductEvent() {
+    if (typeof fbq !== 'undefined') {
+      const variantFromUrl = '{{ product.selected_variant.title }}';
+      const defaultVariant = '{{ product.variants.first.title }}'
+
+      const shortenedVariantTitleFromUrl = variantFromUrl.split(' ').join('');
+      const shortenedDefaultVariantTitle = defaultVariant.split(' ').join('');
+
+      // This is used for the event name
+      const shortenedVariantTitle = shortenedVariantTitleFromUrl === ''
+        ? (shortenedDefaultVariantTitle === 'DefaultTitle' ? '' : '_' + shortenedDefaultVariantTitle)
+        : '_' + shortenedVariantTitleFromUrl;
+
+      // This is used for the JSON payload.
+      const variantTitle = shortenedVariantTitleFromUrl === ''
+        ? (shortenedDefaultVariantTitle === 'DefaultTitle' ? '' : defaultVariant)
+        : variantFromUrl;
+
+      // For all products, with-variants or without, always fire a default
+      // ViewProduct event on load for the top-level product name
+      const basicEventName = ('ViewProduct' + '{{ product.title | split: ' ' | join: '' }}').substring(0, 49);
+      fbq('trackSingleCustom', '1315765872369065', basicEventName, {
+        content_ids: [{{ product.id | json }}],
+        content_name: '{{ product.title | escape }}',
+        content_type: '{{ product.type }}',
+        currency: 'PHP',
+        value: parseFloat('{{ product.price | money_without_currency | remove: "," }}'),
+      });
+
+      // Fire another ViewProduct event on load if a variant was loaded,
+      // either the default one or the variant loaded from the URL query param.
+      if (shortenedVariantTitle !== '') {
+        const eventNameWithVariant = ('ViewProduct' + '{{ product.title | split: ' ' | join: '' }}' + shortenedVariantTitle).substring(0, 49);
+        fbq('trackSingleCustom', '1315765872369065', eventNameWithVariant, {
+          content_ids: [{{ product.id | json }}],
+          content_name: '{{ product.title | escape }}',
+          content_type: '{{ product.type }}',
+          currency: 'PHP',
+          value: parseFloat('{{ product.price | money_without_currency | remove: "," }}'),
+          variant: variantTitle,
+        });
+      }
+
+    } else {
+      setTimeout(fireViewProductEvent, 100);
+    }
+  }
+
+  function fireAddToCardEvent() {
+    const quantity = document.querySelector('input[name="quantity"]').value || 1;
+    const eventName = ('ProductToCart' + '{{ product.title | split: ' ' | join: '' }}').substring(0, 49);
+
+    fbq('trackSingleCustom', '1315765872369065', eventName, {
+      content_ids: [{{ product.id | json }}],
+      content_name: '{{ product.title | escape }}',
+      content_type: '{{ product.type }}',
+      value: parseFloat('{{ product.price | money_without_currency | remove: "," }}') * quantity,
+      currency: 'PHP',
+      quantity: quantity,
+    });
+  }
+
+  function fireVariantChangeEvent(variant) {
+    if (typeof fbq !== 'undefined') {
+      const variantTitle = '_' + variant.title.split(' ').join('');
+      const eventName = ('ViewProduct' + '{{ product.title | split: ' ' | join: '' }}' + variantTitle).substring(0, 49);
+      fbq('trackSingleCustom', '1315765872369065', eventName, {
+        content_ids: [{{ product.id | json }}],
+        content_name: '{{ product.title | escape }}',
+        content_type: '{{ product.type }}',
+        currency: 'PHP',
+        value: variant.price / 100, // Need to convert cents to peso
+        variant: variant.title,
+      });
+    }
+  }
+
+  /**
+   * This is hooked up to the add to cart and buy it now buttons
+   */
+  function registerAddToCartEvents() {
+    if (typeof fbq !== 'undefined') {
+      const addToCartButton = document.querySelector('button[name="add"]');
+      if (addToCartButton) {
+        addToCartButton.addEventListener('click', function(event) {
+          fireAddToCardEvent();
+        });
+      }
+
+      const buyNowButton = document.querySelector('button[id="buy-it-now-product"]');
+      if (buyNowButton) {
+        buyNowButton.addEventListener('click', function(event) {
+          fireAddToCardEvent();
+        });
+      }
+    } else {
+      setTimeout(registerAddToCartEvents, 100);
+    }
+  }
+
+  /**
+   * This is hooked up to the variant dropdown selector of the product page. It fires
+   * every time a user selects a different variant.
+   */
+  function registerVariantChangeEvent() {
+    const variantSelect = document.querySelector('.single-option-selector');
+    if (variantSelect) {
+      variantSelect.addEventListener('change', function(event) {
+        const selectedOption = event.target.options[event.target.selectedIndex];
+        const variantData = {
+          price: {{ product.variants | json }}[event.target.selectedIndex].price,
+          title: selectedOption.text.split(' - ')[0]
+        };
+        fireVariantChangeEvent(variantData);
+      });
+    }
+  }
+
+  function initializeFacebookPixel() {
+    if (typeof fbq !== 'undefined') {
+      fbq('init', '1315765872369065');
+      registerVariantChangeEvent();
+      registerAddToCartEvents();
+      fireViewProductEvent();
+    } else {
+      setTimeout(initializeFacebookPixel, 100);
+    }
+  }
+
+  initializeFacebookPixel();
+</script>
