@@ -12,6 +12,7 @@
     "logo": "shopify://shop_images/Logo_for_website-01.png",
     "logo_width": 140,
     "favicon": "shopify://shop_images/Favicon.png",
+    "summarized_exchange_and_return_policy": "<p class=\"fs__15 mb__15 cg\">\n      ONE TIME EXCHANGE ONLY. We DO NOT accept refunds.<br><br>\n      For returns and exchanges, a piece of the same size and design will be sent unless the customer requests for another item available on hand or store credit.<br><br>\n      For items to qualify for return and exchange, the items should be:<br>\n      - within 7 days from receipt<br>\n      - new with tags in place<br>\n      - in its original packaging<br>\n      - no scent of perfume or detergent<br>\n      - not washed nor worn<br>\n      - not have any visible damage like tears, runs, or broken zippers    <br><br>\nOnce exchange is approved upon inspection, you may choose from the readily available styles within one week of approval. Otherwise, exchange will be forfeited.\n      <br>\n      <br>\n      Contact Suzanne (+63 936 915 8154) for any inquiries and read more about the process here:\n      <a href=\"https://christianamanila.com/pages/exchange-return-policy\">https://christianamanila.com/pages/exchange-return-policy</a>\n    </p>",
     "type_header_font": "avenir_next_n3",
     "heading_scale": 110,
     "type_body_font": "avenir_next_n3",
@@ -128,7 +129,6 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
-    "summarized_exchange_and_return_policy": "<p class=\"fs__15 mb__15 cg\">\n      ONE TIME EXCHANGE ONLY. We DO NOT accept refunds.<br><br>\n      For returns and exchanges, a piece of the same size and design will be sent unless the customer requests for another item available on hand or store credit.<br><br>\n      For items to qualify for return and exchange, the items should be:<br>\n      - within 7 days from receipt<br>\n      - new with tags in place<br>\n      - in its original packaging<br>\n      - no scent of perfume or detergent<br>\n      - not washed nor worn<br>\n      - not have any visible damage like tears, runs, or broken zippers    <br><br>\nOnce exchange is approved upon inspection, you may choose from the readily available styles within one week of approval. Otherwise, exchange will be forfeited.\n      <br>\n      <br>\n      Contact Suzanne (+63 936 915 8154) for any inquiries and read more about the process here:\n      <a href=\"https://christianamanila.com/pages/exchange-return-policy\">https://christianamanila.com/pages/exchange-return-policy</a>\n    </p>",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -150,14 +150,14 @@
         "disabled": false,
         "settings": {}
       },
-      "17745481618859153576": {
-        "type": "shopify://apps/genie-store-pickup/blocks/app-embed/e00f106c-bb7f-4e25-b11d-baff1a328f6b",
-        "disabled": false,
-        "settings": {}
-      },
       "7584948915495707528": {
         "type": "shopify://apps/joy-loyalty-program/blocks/app-embed/555c55c9-9a3d-4fe0-a7a8-2c256984a371",
         "disabled": false,
+        "settings": {}
+      },
+      "12924379504690436420": {
+        "type": "shopify://apps/store-pickup-delivery-cr/blocks/app-embed/c3fec40a-5cb2-4a2b-851c-ed1eaed98975",
+        "disabled": true,
         "settings": {}
       }
     },

@@ -12,6 +12,24 @@
     "slideshow_i7tbbt": {
       "type": "slideshow",
       "blocks": {
+        "slide_9BFcgR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/New_collection_Web_Cover.jpg",
+            "heading": "CLASSICS V. I",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/forever-favorites",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_UErHiT": {
           "type": "slide",
           "settings": {
@@ -29,29 +47,11 @@
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_9BFcgR": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Lunar_new_year_2025.jpg",
-            "heading": "LUNAR NEW YEAR",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Shop Now",
-            "link": "",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
-        "slide_UErHiT",
-        "slide_9BFcgR"
+        "slide_9BFcgR",
+        "slide_UErHiT"
       ],
       "custom_css": [
         "@media screen and (max-width: 750px) {.banner, slideshow-component {display: none; }}",
@@ -73,6 +73,24 @@
     "slideshow_qpdzjB": {
       "type": "slideshow",
       "blocks": {
+        "slide_X8D6ka": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/New_collection_Mobile_Cover.jpg",
+            "heading": "CLASSICS V. I",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/forever-favorites",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_yzkAYx": {
           "type": "slide",
           "settings": {
@@ -90,29 +108,11 @@
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_X8D6ka": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Lunar_new_year_Mobile_Cover.jpg",
-            "heading": "LUNAR NEW YEAR",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Shop Now",
-            "link": "",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
-        "slide_yzkAYx",
-        "slide_X8D6ka"
+        "slide_X8D6ka",
+        "slide_yzkAYx"
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {.banner, slideshow-component {display: none; }}",
@@ -143,7 +143,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bestsellers",
+        "collection": "forever-favorites",
         "products_to_show": 20,
         "columns_desktop": 4,
         "full_width": true,
@@ -151,7 +151,7 @@
         "view_all_style": "link",
         "enable_desktop_slider": true,
         "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
+        "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -224,7 +224,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bestsellers",
+        "collection": "forever-favorites",
         "products_to_show": 20,
         "columns_desktop": 4,
         "full_width": true,
@@ -232,7 +232,7 @@
         "view_all_style": "link",
         "enable_desktop_slider": true,
         "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
+        "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -478,7 +478,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 64,
-        "padding_bottom": 64
+        "padding_bottom": 80
       }
     },
     "video_eQeF3E": {

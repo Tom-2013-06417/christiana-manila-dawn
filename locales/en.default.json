@@ -537,7 +537,9 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "optional_phone_label": "Phone (required)"
+        "optional_phone_label": "Phone (required)",
+        "email_or_phone_label": "Phone Number",
+        "email_or_phone_placeholder": "+63 000 000 0000"
       }
     }
   }
